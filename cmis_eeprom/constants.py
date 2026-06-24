@@ -1,0 +1,20 @@
+"""CMIS / SFF paging constants aligned with SONiC sfputil."""
+
+PAGE_SIZE = 128
+PAGE_OFFSET = 128
+PAGE_SELECT_OFFSET = 127
+
+MAX_EEPROM_PAGE = 255
+MAX_EEPROM_OFFSET = 255
+MIN_OFFSET_FOR_NON_PAGE0 = 128
+
+# Default module management I2C address (A0h / wire address 0x50)
+DEFAULT_I2C_ADDR = 0x50
+
+# CMIS identifier byte at lower page offset 0
+CMIS_IDENTIFIER = 0x1E
+QSFP_DD_IDENTIFIER = 0x18
+SFF8636_IDENTIFIER = 0x0D
+SFF8472_IDENTIFIER = 0x03
+
+CMIS_MODULE_PAGES = [0, 1, 2, 16, 17]

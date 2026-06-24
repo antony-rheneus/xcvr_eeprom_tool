@@ -1,0 +1,2 @@
+[console_scripts]
+cmis-eeprom = cmis_eeprom.cli:main

@@ -1,3 +1,26 @@
+Metadata-Version: 2.4
+Name: cmis-eeprom-tool
+Version: 1.0.0
+Summary: Standalone CMIS module EEPROM read/write for Linux I2C devices
+Author: cmis-eeprom-tool contributors
+License: MIT
+Keywords: cmis,qsfp,eeprom,i2c,optoe,transceiver
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System :: Hardware
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: click>=8.0
+Provides-Extra: smbus
+Requires-Dist: smbus2>=0.4; extra == "smbus"
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+
 # cmis-eeprom-tool
 
 Standalone Linux utility to read and write **CMIS** (and compatible QSFP) module EEPROM registers over I2C — without SONiC, port maps, or platform plugins.

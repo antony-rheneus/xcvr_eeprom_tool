@@ -1,0 +1,7 @@
+click>=8.0
+
+[dev]
+pytest>=7.0
+
+[smbus]
+smbus2>=0.4

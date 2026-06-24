@@ -1,0 +1,2 @@
+click>=8.0
+smbus2>=0.4; extra == "smbus"
